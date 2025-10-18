@@ -3,11 +3,11 @@
 
 @font-face {
     font-family: "poppins-regular";
-    src: url("/public/assets/fonts/poppins.regular.ttf");
+    src: url("/assets/fonts/poppins.regular.ttf");
 }
 @font-face {
     font-family: "raleway-regular";
-    src: url("/public/assets/fonts/raleway.regular.ttf");
+    src: url("/assets/fonts/raleway.regular.ttf");
 }
 .header-font-style{
     @apply text-[15px] tracking-[0.34px] leading-[22.5px] font-poppins-regular text-white;
