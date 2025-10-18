@@ -16,7 +16,7 @@
     @apply text-base leading-[39px] px-[35px] h-fit border border-[#FFFFFF] rounded-[5px];
 }
 .container{
-  @apply px-[65px];
+  @apply px-[65px] 2xs:px-[30px] lg:px-[65px];
 }
 .active_nav{
     @apply bg-black opacity-70 max-w-full top-0 py-[33px];
@@ -33,4 +33,6 @@
 
   --font-poppins-regular: "poppins-regular";
   --font-raleway-regular :"raleway-regular";
+
+  --color-primary: #3C3B0F;
 }
