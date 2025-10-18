@@ -321,8 +321,8 @@
   .bg-white {
     background-color: var(--color-white);
   }
-  .bg-\[url\(\/assets\/images\/main-img\.png\)\] {
-    background-image: url(/assets/images/main-img.png);
+  .bg-\[url\(\.\/assets\/images\/main-img\.png\)\] {
+    background-image: url(./assets/images/main-img.png);
   }
   .bg-cover {
     background-size: cover;
@@ -450,11 +450,11 @@
 }
 @font-face {
   font-family: "poppins-regular";
-  src: url("/assets/fonts/poppins.regular.ttf");
+  src: url("./assets/fonts/poppins.regular.ttf");
 }
 @font-face {
   font-family: "raleway-regular";
-  src: url("/assets/fonts/raleway.regular.ttf");
+  src: url("./assets/fonts/raleway.regular.ttf");
 }
 .header-font-style {
   font-family: var(--font-poppins-regular);
