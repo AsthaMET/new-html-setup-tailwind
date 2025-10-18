@@ -1,5 +1,36 @@
 @import "tailwindcss";
+@tailwind utilities;
 
-.custom-div {
-  @apply w-full h-full bg-blue-300;
+@font-face {
+    font-family: "poppins-regular";
+    src: url("/public/assets/fonts/poppins.regular.ttf");
+}
+@font-face {
+    font-family: "raleway-regular";
+    src: url("/public/assets/fonts/raleway.regular.ttf");
+}
+.header-font-style{
+    @apply text-[15px] tracking-[0.34px] leading-[22.5px] font-poppins-regular text-white;
+}
+.button{
+    @apply text-base leading-[39px] px-[35px] h-fit border border-[#FFFFFF] rounded-[5px];
+}
+.container{
+  @apply px-[65px];
+}
+.active_nav{
+    @apply bg-black opacity-70 max-w-full top-0 py-[33px];
+}
+
+@theme {
+  --breakpoint-2xl: 1920px;
+  --breakpoint-xl: 1440px;
+  --breakpoint-lg: 1232px;
+  --breakpoint-md: 930px;
+  --breakpoint-sm: 650px;
+  --breakpoint-xs: 450px;
+  --breakpoint-2xs: 320px;
+
+  --font-poppins-regular: "poppins-regular";
+  --font-raleway-regular :"raleway-regular";
 }
