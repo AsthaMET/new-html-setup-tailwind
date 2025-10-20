@@ -9,6 +9,10 @@
     font-family: "raleway-regular";
     src: url("./assets/fonts/raleway.regular.ttf");
 }
+@font-face {
+    font-family: "raleway-light";
+    src: url("./assets/fonts/raleway.light.ttf");
+}
 .header-font-style{
     @apply text-[15px] tracking-[0.34px] leading-[22.5px] font-poppins-regular text-white xl:text-[25px];
 }
@@ -19,7 +23,7 @@
   @apply px-[65px] 2xs:px-[30px] lg:px-[65px] xl:!px-[150px];
 }
 .active_nav{
-    @apply bg-black opacity-70 max-w-full top-0 py-[33px];
+    @apply bg-black max-w-full top-0 py-[33px];
 }
 
 @theme {
@@ -33,6 +37,7 @@
 
   --font-poppins-regular: "poppins-regular";
   --font-raleway-regular :"raleway-regular";
+  --font-raleway-light :"raleway-light";
 
   --color-primary: #3C3B0F;
 }
