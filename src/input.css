@@ -2,36 +2,48 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: "poppins-regular";
-    src: url("./assets/fonts/poppins.regular.ttf");
+  font-family: "poppins-regular";
+  src: url("./assets/fonts/poppins.regular.ttf");
 }
 @font-face {
-    font-family: "raleway-regular";
-    src: url("./assets/fonts/raleway.regular.ttf");
+  font-family: "raleway-regular";
+  src: url("./assets/fonts/raleway.regular.ttf");
 }
 @font-face {
-    font-family: "raleway-light";
-    src: url("./assets/fonts/raleway.light.ttf");
+  font-family: "raleway-light";
+  src: url("./assets/fonts/raleway.light.ttf");
 }
 @font-face {
-    font-family: "poppins-light";
-    src: url("./assets/fonts/poppins.light.ttf");
+  font-family: "poppins-light";
+  src: url("./assets/fonts/poppins.light.ttf");
 }
-.header-font-style{
-    @apply text-[15px] tracking-[0.34px] leading-[22.5px] font-poppins-regular text-white xl:text-[25px];
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
-.button{
-    @apply text-base leading-[39px] px-[35px] h-fit border border-[#FFFFFF] rounded-[5px] xl:text-[25px] xl:leading-[70px];
+.header-font-style {
+  @apply text-[15px] tracking-[0.34px] leading-[22.5px] font-poppins-regular text-white xl:text-[25px];
 }
-.container{
+.button {
+  @apply text-base leading-[39px] px-[35px] h-fit border border-[#FFFFFF] rounded-[5px] xl:text-[25px] xl:leading-[70px];
+}
+.container {
   @apply px-[65px] 2xs:px-[30px] lg:px-[65px] xl:!px-[150px];
 }
-.active_nav{
-    @apply bg-black max-w-full top-0 py-[33px];
+.active_nav {
+  @apply bg-black max-w-full top-0 py-[33px];
 }
-.md-container{
-    @apply pl-[101px] pr-[98px];
+.md-container {
+  @apply pl-[101px] pr-[98px] 2xs:px-[30px] lg:pl-[101px] lg:pr-[98px];
 }
+/* .animate-marquee {
+  animation: marquee 3s linear infinite;
+  will-change: transform;
+} */
 @theme {
   --breakpoint-2xl: 1920px;
   --breakpoint-xl: 1441px;
@@ -43,8 +55,8 @@
 
   --font-poppins-regular: "poppins-regular";
   --font-poppins-light: "poppins-light";
-  --font-raleway-regular :"raleway-regular";
-  --font-raleway-light :"raleway-light";
+  --font-raleway-regular: "raleway-regular";
+  --font-raleway-light: "raleway-light";
 
-  --color-primary: #3C3B0F;
+  --color-primary: #3c3b0f;
 }
