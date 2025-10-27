@@ -40,10 +40,10 @@
 .md-container {
   @apply pl-[101px] pr-[98px] 2xs:px-[30px] lg:pl-[101px] lg:pr-[98px];
 }
-/* .animate-marquee {
+.animate-marquee {
   animation: marquee 3s linear infinite;
   will-change: transform;
-} */
+}
 @theme {
   --breakpoint-2xl: 1920px;
   --breakpoint-xl: 1441px;
