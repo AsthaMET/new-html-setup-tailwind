@@ -32,11 +32,14 @@
 .md-container {
   @apply pl-[101px] pr-[98px] 2xs:px-[30px] lg:pl-[101px] lg:pr-[98px];
 }
-.experience-responsive{
+.experience-responsive {
   @apply 2xs:mx-[20px] 2xs:pt-[40px] 2xs:pb-[40px] xs:mx-[30px] xs:pt-[50px] xs:pb-[50px] sm:mx-[40px] sm:pt-[60px] sm:pb-[60px] md:mx-[50px] md:pt-[70px] md:pb-[70px] lg:mx-[103px] lg:pt-[255px] lg:pb-[103px];
 }
-.our-accommodation-card-responsive{
+.our-accommodation-card-responsive {
   @apply max-w-[387px] max-h-[570px] pl-[27.67px] pr-[54px] pt-[459px] pb-[26.73px] flex flex-col gap-[18px];
+}
+.dining-responsive {
+  @apply max-w-[664px] max-h-[683px] 2xs:max-w-[350px] 2xs:max-h-[350px] xs:max-w-[500px] xs:max-h-[500px] md:max-w-[550px] md:max-h-[550px] lg:max-w-[664px] lg:max-h-[683px];
 }
 @theme {
   --breakpoint-2xl: 1920px;

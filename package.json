@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/ChetanJET/HTML-Tailwind-Setup#readme",
   "dependencies": {
+    "@preline/carousel": "^3.2.3",
     "@tailwindcss/cli": "^4.1.14",
     "tailwindcss": "^4.1.14"
   }
