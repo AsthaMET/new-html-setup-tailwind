@@ -21,7 +21,7 @@
   @apply text-[15px] tracking-[0.34px] leading-[22.5px] font-poppins-regular text-white xl:text-[25px];
 }
 .button {
-  @apply text-base leading-[39px] px-[35px] h-fit border border-[#FFFFFF] rounded-[5px] xl:text-[25px] xl:leading-[70px];
+  @apply text-base leading-[39px] px-[34.5px] h-fit border border-[#FFFFFF] rounded-[5px] xl:text-[25px] xl:leading-[70px];
 }
 .container {
   @apply px-[65px] 2xs:px-[30px] lg:px-[65px] xl:!px-[150px];

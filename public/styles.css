@@ -311,9 +311,6 @@
   .hidden {
     display: none;
   }
-  .table {
-    display: table;
-  }
   .h-1 {
     height: calc(var(--spacing) * 1);
   }
@@ -325,9 +322,6 @@
   }
   .max-h-\[178px\] {
     max-height: 178px;
-  }
-  .max-h-\[570px\] {
-    max-height: 570px;
   }
   .max-h-\[630px\] {
     max-height: 630px;
@@ -350,9 +344,6 @@
   .max-w-\[286px\] {
     max-width: 286px;
   }
-  .max-w-\[387px\] {
-    max-width: 387px;
-  }
   .max-w-\[520px\] {
     max-width: 520px;
   }
@@ -371,14 +362,8 @@
   .max-w-full {
     max-width: 100%;
   }
-  .border-collapse {
-    border-collapse: collapse;
-  }
   .cursor-pointer {
     cursor: pointer;
-  }
-  .resize {
-    resize: both;
   }
   .grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -403,9 +388,6 @@
   }
   .gap-8 {
     gap: calc(var(--spacing) * 8);
-  }
-  .gap-\[18px\] {
-    gap: 18px;
   }
   .gap-\[41px\] {
     gap: 41px;
@@ -510,20 +492,8 @@
   .pt-\[255px\] {
     padding-top: 255px;
   }
-  .pt-\[459px\] {
-    padding-top: 459px;
-  }
-  .pr-\[54px\] {
-    padding-right: 54px;
-  }
-  .pb-\[26\.73px\] {
-    padding-bottom: 26.73px;
-  }
   .pb-\[103px\] {
     padding-bottom: 103px;
-  }
-  .pl-\[27\.67px\] {
-    padding-left: 27.67px;
   }
   .text-center {
     text-align: center;
@@ -642,10 +612,6 @@
   }
   .mix-blend-overlay {
     mix-blend-mode: overlay;
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
   .transition-all {
     transition-property: all;
@@ -946,7 +912,7 @@
   border-style: var(--tw-border-style);
   border-width: 1px;
   border-color: #FFFFFF;
-  padding-inline: 35px;
+  padding-inline: 34.5px;
   font-size: var(--text-base);
   line-height: var(--tw-leading, var(--text-base--line-height));
   --tw-leading: 39px;
@@ -1065,11 +1031,6 @@
   syntax: "*";
   inherits: false;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @property --tw-duration {
   syntax: "*";
   inherits: false;
@@ -1081,7 +1042,6 @@
       --tw-leading: initial;
       --tw-font-weight: initial;
       --tw-tracking: initial;
-      --tw-outline-style: solid;
       --tw-duration: initial;
     }
   }
