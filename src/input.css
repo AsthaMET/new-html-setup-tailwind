@@ -1,6 +1,24 @@
 @import "tailwindcss";
 @tailwind utilities;
 
+@theme {
+  --breakpoint-2xl: 1920px;
+  --breakpoint-xl: 1441px;
+  --breakpoint-lg: 1277px;
+  --breakpoint-md: 930px;
+  --breakpoint-sm: 650px;
+  --breakpoint-xs: 450px;
+  --breakpoint-2xs: 320px;
+
+  --font-poppins-regular: "poppins-regular";
+  --font-poppins-light: "poppins-light";
+  --font-raleway-regular: "raleway-regular";
+  --font-raleway-light: "raleway-light";
+
+  --color-primary: #3c3b0f;
+  --color-green: #809B10;
+}
+
 @font-face {
   font-family: "poppins-regular";
   src: url("./assets/fonts/poppins.regular.ttf");
@@ -47,19 +65,6 @@
 .socialmedia-icon{
   @apply bg-[#2F3434] max-w-[39px] w-fit p-3 rounded-full;
 }
-@theme {
-  --breakpoint-2xl: 1920px;
-  --breakpoint-xl: 1441px;
-  --breakpoint-lg: 1277px;
-  --breakpoint-md: 930px;
-  --breakpoint-sm: 650px;
-  --breakpoint-xs: 450px;
-  --breakpoint-2xs: 320px;
-
-  --font-poppins-regular: "poppins-regular";
-  --font-poppins-light: "poppins-light";
-  --font-raleway-regular: "raleway-regular";
-  --font-raleway-light: "raleway-light";
-
-  --color-primary: #3c3b0f;
+.previous{
+  @apply p-[9.5px] cursor-pointer absolute top-[50%] z-50 left-[33px] 2xs:top-[5%] md:top-[50%] appearance-none border border-white bg-opacity-40 rounded-full transition-all duration-300 ease-in-out shadow-lg focus:outline-none focus:ring-0 hover:bg-opacity-20;
 }

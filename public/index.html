@@ -133,7 +133,7 @@
           Our
           Accommodation</h2>
         <button
-          class="text-primary border cursor-pointer border-primary leading-[39px] px-[39px] rounded-[5px] font-poppins-regular"><a
+          class="text-green border cursor-pointer border-green leading-[39px] px-[39px] rounded-[5px] font-poppins-regular"><a
             href="#">Explore All</a></button>
       </div>
       <p class="text-base max-w-[619px] font-poppins-light tracking-[0.34px] text-primary leading-[25px] mt-[21px]">
@@ -205,7 +205,7 @@
             <span class="block">The highly trained chefs will cater to any dietary restrictions.</span>
           </p>
           <button
-            class="text-[#809B10] border border-[#809B10] leading-[39px] mt-[64px] px-[39px] rounded-[5px] font-poppins-regular cursor-pointer"><a
+            class="text-green border border-green leading-[39px] mt-[64px] px-[39px] rounded-[5px] font-poppins-regular cursor-pointer"><a
               href="#">Explore Dining</a></button>
         </div>
       </div>
@@ -232,7 +232,7 @@
       </div>
       <div class="flex justify-between w-full h-[100%]">
         <button
-          class="prev p-[9.5px] cursor-pointer absolute top-[50%] z-50 left-[33px] 2xs:top-[5%] md:top-[50%] appearance-none border border-white bg-opacity-40 rounded-full transition-all duration-300 ease-in-out shadow-lg focus:outline-none focus:ring-0 hover:bg-opacity-20"
+          class="prev previous"
           aria-label="prev slide">
           <img src="./assets/images/left-arrow.png">
         </button>
@@ -269,38 +269,72 @@
         Tulia</h4>
       <div class="flex max-w-[1248px] gap-[24px] overflow-hidden mt-[49px] flex-wrap">
         <input type="text" placeholder="Name"
-          class="bg-[#F1EDED] text-[#CAC7C7] border border-[#CAC7C7] pt-[16px] pb-[17px] pl-[22px] rounded-[5px] max-w-[294px] grow">
+          class="bg-[#F1EDED] text-[#CAC7C7] grow border border-[#CAC7C7] pt-[16px] pb-[17px] pl-[22px] rounded-[5px] max-w-[294px] focus:border-[#3C3B0F] focus:text-[#3C3B0F]">
         <input type="text" placeholder="Surname"
-          class="bg-[#F1EDED] text-[#CAC7C7] border border-[#CAC7C7] pt-[16px] pb-[17px] pl-[22px] rounded-[5px] max-w-[294px] grow">
-        <input type="text" placeholder="Email Address"
-          class="bg-[#F1EDED] text-[#CAC7C7] border border-[#CAC7C7] pt-[16px] pb-[17px] pl-[22px] rounded-[5px] max-w-[377px] grow">
+          class="bg-[#F1EDED] text-[#CAC7C7] grow border border-[#CAC7C7] pt-[16px] pb-[17px] pl-[22px] rounded-[5px] max-w-[294px] focus:border-[#3C3B0F] focus:text-[#3C3B0F]">
+        <input type="email" placeholder="Email Address"
+          class="bg-[#F1EDED] text-[#CAC7C7] grow border border-[#CAC7C7] pt-[16px] pb-[17px] pl-[22px] rounded-[5px] max-w-[377px] focus:border-[#3C3B0F] focus:text-[#3C3B0F]">
         <button
-          class="text-[#3C3B0F] border border-[#3C3B0F] px-[68.5px] rounded-[5px] cursor-pointer 2xs:py-[12px] lg:py-0"><a
+          class="text-[#3C3B0F] font-poppins-regular border border-[#3C3B0F] px-[68.5px] rounded-[5px] cursor-pointer 2xs:py-[12px] lg:py-0 hover:text-[#F1EDED] hover:bg-[#3C3B0F]"><a
             href="#">Subscribe</a></button>
       </div>
     </div>
   </section>
 
-  <section>
-    <div class="bg-[#F1EDED] px-[94px] py-[84px] 2xs:px-[30px] 2xs:py-[40px] flex">
-      <div>
-        <img src="./assets/images/logo-footer.png">
-        <p class="max-w-[244px] font-poppins-light text-base leading-[25px] tracking-[0.34px] mt-[25px]">Tulia Amboseli
-          Safari Camp is an eco-friendly safari camp just outside of Kimana Gate in the southeast area of the Amboseli
-          National Park in Kenya.</p>
-        <div class="flex gap-[15px] w-fit mt-[31px]">
-          <div class="socialmedia-icon"><img src="./assets/images/instagram.png"></div>
-          <div class="bg-[#2F3434] max-w-[39px] w-fit px-4 rounded-full content-center"><img
-              src="./assets/images/facebook.png"></div>
-          <div class="socialmedia-icon"><img src="./assets/images/youtube.png"></div>
+  <footer>
+    <div class="bg-[#F1EDED]">
+      <div class="flex pl-[98px] max-w-screen 2xs:px-[30px] md:px-[60px] lg:pl-[98px] 2xs:gap-2 md:gap-0 2xs:flex-col md:flex-row">
+        <div class="max-w-[244px]">
+          <img src="./assets/images/logo-footer.png">
+          <p class="max-w-[244px] 2xs:max-w-screen md:max-w-[244px] opacity-60 font-poppins-light text-base leading-[25px] tracking-[0.34px] mt-[25px]">
+            Tulia Amboseli Safari Camp is an eco-friendly safari camp just outside of Kimana Gate in the southeast area
+            of the Amboseli National Park in Kenya.</p>
+          <div class="flex gap-[15px] w-fit mt-[31px]">
+            <div class="socialmedia-icon"><img src="./assets/images/instagram.png"></div>
+            <div class="bg-[#2F3434] max-w-[39px] w-fit px-4 rounded-full content-center"><img
+                src="./assets/images/facebook.png"></div>
+            <div class="socialmedia-icon"><img src="./assets/images/youtube.png"></div>
+          </div>
+        </div>
+        <div class="flex 2xs:flex-col xs:flex-row 2xs:gap-3 xs:gap-0 2xs:mt-5 md:mt-0 max-[930px]:justify-between">
+          <div class="ml-[113px] 2xs:ml-0 md:ml-[110px] lg:ml-[113px]">
+            <h6 class="text-[#3C3B0F] font-raleway-regular text-[18px] leading-[29px] tracking-[0.34px]">About</h6>
+            <p class="max-w-[76px] text-[#3C3B0F] opacity-40 leading-[38px] mt-1">Our Story Location DIning Rates Live
+              Availability Gallery
+              Contact us</p>
+          </div>
+          <div class="ml-[152px] 2xs:ml-0 md:ml-[110px] lg:ml-[152px]">
+            <h6 class="text-[#3C3B0F] font-raleway-regular text-[18px] leading-[29px] tracking-[0.34px]">Accommodation
+            </h6>
+            <p class="max-w-[158px] text-[#3C3B0F] opacity-40 leading-[38px] mt-1">Superb tents
+              Superb family tents
+              Deluxe tents</p>
+          </div>
+          <div class="ml-[188px] 2xs:ml-0 md:ml-[110px] lg:ml-[188px]">
+            <h6 class="text-[#3C3B0F] font-raleway-regular text-[18px] leading-[29px] tracking-[0.34px]">Experiences
+            </h6>
+            <p class="max-w-[119px] text-[#3C3B0F] leading-[38px] opacity-40 mt-1">Game Drives
+              Balloon Safaris
+              Bush walks
+              Spa
+              Bush Breakfast
+              Sundowners Cultural Tours
+            </p>
+          </div>
         </div>
       </div>
-      <div>
-        <h6>About</h6>
-        <p class="max-w-[76px]">Our Story Location DIning Rates Live Availability Gallery Contact us</p>
+      <div class="w-screen border border-[#B6B6B6] mt-[170px]"></div>
+      <div class="flex 2xs:gap-2 md:gap-5 lg:gap-[30px] px-[98px] 2xs:px-[30px] md:px-[60px] lg:px-[98px] w-screen justify-between mt-[19px] pb-[30px] flex-wrap">
+        <p class="font-poppins-regular text-base leading-[25px] tracking-[0.34px] text-[#232828]">All rights reserved ©
+          2025 Tulia</p>
+        <div class="flex gap-[30px] 2xs:gap-2 md:gap-5 lg:gap-[30px] flex-wrap">
+          <p class="font-poppins-regular text-base leading-[25px] tracking-[0.34px] text-[#232828]">Terms and Conditions
+          </p>
+          <p class="font-poppins-regular text-base leading-[25px] tracking-[0.34px] text-[#232828]">Privacy Policy</p>
+        </div>
       </div>
     </div>
-  </section>
+  </footer>
 </body>
 
 </html>
