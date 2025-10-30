@@ -41,6 +41,12 @@
 .dining-responsive {
   @apply max-w-[664px] max-h-[683px] 2xs:max-w-[350px] 2xs:max-h-[350px] xs:max-w-[500px] xs:max-h-[500px] md:max-w-[550px] md:max-h-[550px] lg:max-w-[664px] lg:max-h-[683px];
 }
+.mask-clip-path {
+    clip-path: inset(0 40% 0 40%);
+}
+.socialmedia-icon{
+  @apply bg-[#2F3434] max-w-[39px] w-fit p-3 rounded-full;
+}
 @theme {
   --breakpoint-2xl: 1920px;
   --breakpoint-xl: 1441px;

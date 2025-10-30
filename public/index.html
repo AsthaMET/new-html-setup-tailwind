@@ -12,7 +12,7 @@
 <body>
   <div class="bg-[url(./assets/images/main-img.png)] max-h-[797px] mt-0 bg-no-repeat bg-cover overflow-hidden ">
     <!-- Header -->
-    <nav class="container top-[33px] flex justify-between fixed max-w-full">
+    <nav class="container top-[33px] flex justify-between fixed max-w-full z-50">
       <img src="./assets/images/logo.png" class="w-[191px] h-[79.58px]">
       <div class="hidden md:flex gap-6 items-center">
         <a href="#" class="header-font-style hover:opacity-70 leading-[22.5px]">Accommodation</a>
@@ -22,7 +22,7 @@
             Trip</a></button>
       </div>
 
-      <button class="block md:hidden py-3 px-4 mx-2 rounded focus:outline-none hover:bg-gray-200 group">
+      <button class="block md:hidden py-3 px-4 mx-2 rounded focus:outline-none hover:bg-gray-200 group cursor-pointer">
         <div class="w-5 h-1 bg-white mb-1"></div>
         <div class="w-5 h-1 bg-white mb-1"></div>
         <div class="w-5 h-1 bg-white mb-1"></div>
@@ -46,7 +46,8 @@
       <h1
         class="justify-self-center tracking-[1.14px] leading-[59px] text-[50px] font-raleway-regular text-white xl:text-[60px] 2xs:text-[45px] xs:text-[46px] sm:text-[47px] md:text-[48px] lg:text-[50px]">
         Authentic African Safaris</h1>
-      <button class="text-white button mt-[39px] hover:opacity-70"><a href="#">Explore Accommodation</a></button>
+      <button class="text-white button mt-[39px] hover:opacity-70 cursor-pointer"><a href="#">Explore
+          Accommodation</a></button>
     </div>
   </div>
 
@@ -74,7 +75,7 @@
             with other guests.</span>
         </p>
         <button
-          class="mt-[45px] text-primary border border-primary leading-[39px] px-[41.5px] rounded-[5px] font-poppins-regular md:mt-[30px] lg:mt-[45px]"><a
+          class="mt-[45px] cursor-pointer text-primary border border-primary leading-[39px] px-[41.5px] rounded-[5px] font-poppins-regular md:mt-[30px] lg:mt-[45px]"><a
             href="#">Our
             Story</a></button>
       </div>
@@ -132,7 +133,7 @@
           Our
           Accommodation</h2>
         <button
-          class="text-primary border border-primary leading-[39px] px-[39px] rounded-[5px] font-poppins-regular"><a
+          class="text-primary border cursor-pointer border-primary leading-[39px] px-[39px] rounded-[5px] font-poppins-regular"><a
             href="#">Explore All</a></button>
       </div>
       <p class="text-base max-w-[619px] font-poppins-light tracking-[0.34px] text-primary leading-[25px] mt-[21px]">
@@ -161,7 +162,8 @@
   </section>
 
   <section>
-    <div class="mt-[150px] bg-[url('./assets/images/experiances.png')] bg-cover ">
+    <div
+      class="mt-[150px] bg-[url('./assets/images/experiances.png')] bg-cover 2xs:mt-[40px] md:mt-[80px] lg:mt-[150px]">
       <div class="pt-[255px] mx-[103px] pb-[103px] experience-responsive max-h-[683px]">
         <p class="font-raleway-regular text-base tracking-[1.29px] text-white ">Experiences</p>
         <h3 class="text-4xl font-raleway-regular tracking-[0.8px] text-white mt-[24px] 2xs:text-[26px] sm:text-4xl">
@@ -173,7 +175,7 @@
           most alive, stimulated whether you are on foot, atop a horse, in a game vehicle, hot air balloon or boat. </p>
         <div class="flex justify-between mt-[45px] flex-wrap max-[705px]:mt-3">
           <button
-            class="text-white border border-white leading-[39px] px-[39.5px] rounded-[5px] font-poppins-regular"><a
+            class="text-white border cursor-pointer border-white leading-[39px] px-[39.5px] rounded-[5px] font-poppins-regular"><a
               href="#">Explore Experiences</a></button>
           <div class="flex items-center max-[706px]:mt-8">
             <span class="text-white font-poppins-regular text-base tracking-[0.34px] ">Game Drives</span>
@@ -187,7 +189,7 @@
     </div>
   </section>
   <section>
-    <div class="mt-[150px] max-w-[1340px] bg-[#F1EDED] xl:justify-self-center">
+    <div class="mt-[150px] max-w-[1340px] bg-[#F1EDED] xl:justify-self-center 2xs:mt-[40px] md:mt-[80px] lg:mt-[150px]">
       <div class="flex max-w-[1340px] 2xs:flex-col md:flex-row 2xs:mx-[30px] md:mx-0">
         <img src="./assets/images/Dining.png" class="dining-responsive">
         <div
@@ -203,15 +205,102 @@
             <span class="block">The highly trained chefs will cater to any dietary restrictions.</span>
           </p>
           <button
-            class="text-[#809B10] border border-[#809B10] leading-[39px] mt-[64px] px-[39px] rounded-[5px] font-poppins-regular"><a
+            class="text-[#809B10] border border-[#809B10] leading-[39px] mt-[64px] px-[39px] rounded-[5px] font-poppins-regular cursor-pointer"><a
               href="#">Explore Dining</a></button>
         </div>
       </div>
     </div>
   </section>
-  <div class="mt-[90px]">
+  <div class="mt-[90px] 2xs:hidden md:block">
     <img src="./assets/images/Path 2.png" class="w-[100%]">
   </div>
+
+  <section>
+    <div class="carousel w-[100%] h-[100%] relative overflow-hidden z-10 2xs:mt-[40px] md:mt-0"
+      aria-roledescription="carousel">
+      <div class="carousel-inner absolute h-[100%] w-full z-10 ">
+        <div
+          class="carousel-item absolute top-0 left-0 w-full h-[100%] opacity-100 transition-all duration-500 ease-out"
+          role="group" aria-roledescription="slide" aria-label="Slide 1">
+          <img src="./assets/images/testomonial1.png" alt="Random Image 1" class="w-screen bg-cover relative h-[100%]">
+        </div>
+
+        <div class="carousel-item top-0 left-0 w-full h-[100%] opacity-100 transition-all duration-500 ease-out"
+          role="group" aria-roledescription="slide" aria-label="Slide 1">
+          <img src="./assets/images/testomonial2.png" alt="Random Image 1" class="w-screen bg-cover relative h-[100%]">
+        </div>
+      </div>
+      <div class="flex justify-between w-full h-[100%]">
+        <button
+          class="prev p-[9.5px] cursor-pointer absolute top-[50%] z-50 left-[33px] 2xs:top-[5%] md:top-[50%] appearance-none border border-white bg-opacity-40 rounded-full transition-all duration-300 ease-in-out shadow-lg focus:outline-none focus:ring-0 hover:bg-opacity-20"
+          aria-label="prev slide">
+          <img src="./assets/images/left-arrow.png">
+        </button>
+        <button
+          class="next p-[9.5px] absolute cursor-pointer z-50 top-[50%] right-[32px] 2xs:top-[5%] md:top-[50%] appearance-none border border-white bg-opacity-40 rounded-full transition-all duration-300 ease-in-out shadow-lg focus:outline-none focus:ring-0 hover:bg-opacity-20"
+          aria-label="next slide">
+          <img src="./assets/images/right-arrow.png">
+        </button>
+      </div>
+      <div
+        class="z-50 justify-self-center relative self-center py-[153px] 2xs:my-[95px] lg:my-0 2xs:py-0 lg:py-[153px]">
+        <p
+          class="text-white text-[22px] text-center max-w-[872px] font-raleway-regular tracking-[0.8px] 2xs:mx-[30px] md:mx-0 2xs:text-base md:text-[18px] lg:text-[22px]">
+          “I visited this
+          beautiful
+          property in the wilderness just outside the gates of Amboseli. It’s a myth that one needs to stay inside the
+          park. I would stay at this property any day. You face Mt. Kilimanjaro and usually have elephants visit you
+          every
+          evening. The service is fantastic and when on safari one needs to get the full experience which is what this
+          camp does for you. Very comfortable with excellent food. Yes! Very very highly recommended.”</p>
+        <p class="text-white leading-8 font-raleway-regular tracking-[0.8px] text-[20px] text-center">Ranjan P</p>
+        <button
+          class="text-white block justify-self-center cursor-pointer border tracking-[0.39px] border-white leading-[39px] mt-[33px] px-[39px] rounded-[5px] text-[18px] 2xs:text-base md:text-[18px] font-poppins-regular"><a
+            href="#">Enquire Now Trip</a></button>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section>
+    <div
+      class="bg-[#F1EDED] px-[94px] py-[84px] 2xs:px-[30px] 2xs:py-[40px] md:px-[60px] md:py-[65px] lg:px-[94px] lg:py-[84px]">
+      <h4 class="font-raleway-regular text-4xl tracking-[0.77px] 2xs:text-[24px] sm:text-4xl">Hear the latest news about
+        Tulia</h4>
+      <div class="flex max-w-[1248px] gap-[24px] overflow-hidden mt-[49px] flex-wrap">
+        <input type="text" placeholder="Name"
+          class="bg-[#F1EDED] text-[#CAC7C7] border border-[#CAC7C7] pt-[16px] pb-[17px] pl-[22px] rounded-[5px] max-w-[294px] grow">
+        <input type="text" placeholder="Surname"
+          class="bg-[#F1EDED] text-[#CAC7C7] border border-[#CAC7C7] pt-[16px] pb-[17px] pl-[22px] rounded-[5px] max-w-[294px] grow">
+        <input type="text" placeholder="Email Address"
+          class="bg-[#F1EDED] text-[#CAC7C7] border border-[#CAC7C7] pt-[16px] pb-[17px] pl-[22px] rounded-[5px] max-w-[377px] grow">
+        <button
+          class="text-[#3C3B0F] border border-[#3C3B0F] px-[68.5px] rounded-[5px] cursor-pointer 2xs:py-[12px] lg:py-0"><a
+            href="#">Subscribe</a></button>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="bg-[#F1EDED] px-[94px] py-[84px] 2xs:px-[30px] 2xs:py-[40px] flex">
+      <div>
+        <img src="./assets/images/logo-footer.png">
+        <p class="max-w-[244px] font-poppins-light text-base leading-[25px] tracking-[0.34px] mt-[25px]">Tulia Amboseli
+          Safari Camp is an eco-friendly safari camp just outside of Kimana Gate in the southeast area of the Amboseli
+          National Park in Kenya.</p>
+        <div class="flex gap-[15px] w-fit mt-[31px]">
+          <div class="socialmedia-icon"><img src="./assets/images/instagram.png"></div>
+          <div class="bg-[#2F3434] max-w-[39px] w-fit px-4 rounded-full content-center"><img
+              src="./assets/images/facebook.png"></div>
+          <div class="socialmedia-icon"><img src="./assets/images/youtube.png"></div>
+        </div>
+      </div>
+      <div>
+        <h6>About</h6>
+        <p class="max-w-[76px]">Our Story Location DIning Rates Live Availability Gallery Contact us</p>
+      </div>
+    </div>
+  </section>
 </body>
 
 </html>
