@@ -6,58 +6,77 @@ window.addEventListener("scroll", () => {
     nav.classList.remove("active_nav");
   }
 });
-document.addEventListener('DOMContentLoaded', () => {
-    const items = document.querySelectorAll('.carousel-item');
-    let currentItem = 0;
 
-    const showItem = (index) => {
-        items[currentItem].classList.remove('opacity-100');
-        items[currentItem].classList.add('opacity-0');
-        items[currentItem].setAttribute('aria-hidden', 'true');
-        
-        currentItem = (index + items.length) % items.length;
-        
-        items[currentItem].classList.remove('opacity-0');
-        items[currentItem].classList.add('opacity-100');
-        items[currentItem].removeAttribute('aria-hidden');
-    };
+document.addEventListener("DOMContentLoaded", () => {
+  const btn = menuButton, menu = mobileMenu, open = menuIcon, close = closeIcon;
 
-    document.querySelector('.prev').addEventListener('click', () => {
-        showItem(currentItem - 1);
-    });
+  const toggleMenu = (show) => {
+    menu.classList.toggle("opacity-100", show);
+    menu.classList.toggle("pointer-events-auto", show);
+    menu.classList.toggle("opacity-0", !show);
+    menu.classList.toggle("pointer-events-none", !show);
+    open.classList.toggle("hidden", show);
+    close.classList.toggle("hidden", !show);
+  };
 
-    document.querySelector('.next').addEventListener('click', () => {
-        showItem(currentItem + 1);
-    });
+  btn.onclick = e => {
+    e.stopPropagation();
+    toggleMenu(!menu.classList.contains("opacity-100"));
+  };
 
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'ArrowLeft') {
-            showItem(currentItem - 1);
-        } else if (e.key === 'ArrowRight') {
-            showItem(currentItem + 1);
-        }
-    });
+  menu.querySelectorAll("a").forEach(a => a.onclick = e => {
+    e.stopPropagation();
+    toggleMenu(false);
+  });
 
-    items[currentItem].classList.add('opacity-100');
-    items[currentItem].classList.remove('opacity-0');
-    items[currentItem].removeAttribute('aria-hidden');
+  document.onclick = e => {
+    if (!btn.contains(e.target) && !menu.contains(e.target)) toggleMenu(false);
+  };
 });
-gsap.registerPlugin(ScrollTrigger);
 
 document.addEventListener("DOMContentLoaded", function () {
-    const clipAnimation = gsap.timeline({
-        scrollTrigger: {
-            trigger: "#clip",
-            start: "top center",
-            end: "+=500 center",
-            scrub: 0.5,
-            pin: true,
-            pinSpacing: true,
-        },
-    });
-
-    clipAnimation.to(".mask-clip-path", {
-        clipPath: "inset(0 0 0 0)",
-        ease: "power2.out"
-    });
+const swiper = new Swiper(".swiper", {
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 20,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });
+});
+document.addEventListener("DOMContentLoaded", () => {
+  new Swiper(".testimonial-swiper", {
+    loop: true,
+    speed: 600,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+});
+document.addEventListener("DOMContentLoaded", () => {
+const swiper = new Swiper('.accommodation-swiper', {
+    loop: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    slidesPerView: 1.1,
+    spaceBetween: 20,
+    centeredSlides: true,
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+    },
+  });
+});
+
+
+

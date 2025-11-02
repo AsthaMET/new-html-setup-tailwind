@@ -6,61 +6,73 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles.css">
   <script src="./assets/js/main.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
   <title>Tulia WebPage</title>
 </head>
 
 <body>
-  <div class="bg-[url(./assets/images/main-img.png)] max-h-[797px] mt-0 bg-no-repeat bg-cover overflow-hidden ">
-    <!-- Header -->
+  <header>
     <nav class="container top-[33px] flex justify-between fixed max-w-full z-50">
-      <img src="./assets/images/logo.png" class="w-[191px] h-[79.58px]">
+      <img src="./assets/images/logo.png" class="max-w-[191px] max-h-[79.58px]" />
+
       <div class="hidden md:flex gap-6 items-center">
-        <a href="#" class="header-font-style hover:opacity-70 leading-[22.5px]">Accommodation</a>
-        <a href="#" class="header-font-style hover:opacity-70 leading-[22.5px]">Location</a>
-        <a href="#" class="header-font-style hover:opacity-70 leading-[22.5px] tracking-[0.34px]">Experiences</a>
-        <button class="text-white button"><a href="#">Plan Your
-            Trip</a></button>
+        <a href="#" class="header-font-style">Accommodation</a>
+        <a href="#" class="header-font-style">Location</a>
+        <a href="#" class="header-font-style">Experiences</a>
+        <button class="white-button button px-[26.5px]">
+          <a href="#">Plan Your Trip</a>
+        </button>
       </div>
 
-      <button class="block md:hidden py-3 px-4 mx-2 rounded focus:outline-none hover:bg-gray-200 group cursor-pointer">
-        <div class="w-5 h-1 bg-white mb-1"></div>
-        <div class="w-5 h-1 bg-white mb-1"></div>
-        <div class="w-5 h-1 bg-white mb-1"></div>
-        <div
-          class="absolute top-[130px] right-0 h-fit w-full bg-black text-white border opacity-0 group-focus:right-0 group-focus:opacity-100 transition-all duration-300 ">
+      <button id="menuButton" class="block md:hidden py-3 px-4 mx-2 rounded focus:outline-none cursor-pointer ">
+        <svg id="menuIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+          class="w-8 h-8 text-white cursor-pointer" aria-hidden="true" focusable="false">
+          <path stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M3 6h18M3 12h18M3 18h18" />
+        </svg>
+
+        <svg id="closeIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+          class="hidden w-8 h-8 text-white cursor-pointer" aria-hidden="true" focusable="false">
+          <path stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M6 6l12 12M6 18L18 6" />
+        </svg>
+
+        <div id="mobileMenu"
+          class="absolute top-[130px] right-0 h-fit w-full bg-black text-white border opacity-0 group-focus:right-0 group-focus:opacity-100 transition">
           <ul class="flex flex-col items-center w-full text-base cursor-pointer pt-5">
-            <li class="hover:bg-gray-200 py-4 px-6 w-full"><a href="#">Accommodation</a></li>
-            <li class="hover:bg-gray-200 py-4 px-6 w-full"><a href="#">Location</a></li>
-            <li class="hover:bg-gray-200 py-4 px-6 w-full"><a href="#">Experiences</a></li>
-            <div
-              class="text-white border border-white px-6 py-2 rounded-md hover:opacity-80 md:hidden block w-[90%] my-6">
+            <li class="menu-links"><a href="#">Accommodation</a></li>
+            <li class="menu-links"><a href="#">Location</a></li>
+            <li class="menu-links"><a href="#">Experiences</a></li>
+            <div class="white-button button px-6 py-2 rounded-md md:hidden block w-[90%] my-6 ">
               <a href="#">Plan Your Trip</a>
             </div>
           </ul>
         </div>
       </button>
-
     </nav>
-    <!-- main section contant -->
-    <div class="text-center mt-[380px] mb-[279px]">
-      <h1
-        class="justify-self-center tracking-[1.14px] leading-[59px] text-[50px] font-raleway-regular text-white xl:text-[60px] 2xs:text-[45px] xs:text-[46px] sm:text-[47px] md:text-[48px] lg:text-[50px]">
-        Authentic African Safaris</h1>
-      <button class="text-white button mt-[39px] hover:opacity-70 cursor-pointer"><a href="#">Explore
-          Accommodation</a></button>
+  </header>
+
+  <div
+    class="bg-[url(./assets/images/main-img.png)] h-screen bg-no-repeat bg-cover overflow-hidden flex items-center justify-center text-center">
+    <div>
+      <h1 class="h1">
+        Authentic African Safaris
+      </h1>
+      <button class="white-button button mt-[39px] px-[42.5px]">
+        <a href="#">Explore Accommodation</a>
+      </button>
     </div>
   </div>
 
 
   <section>
     <div
-      class="max-w-[1154px] gap-[143px] flex ml-[100px] xl:justify-self-center 2xs:flex-col md:flex-row lg:ml-[100px] lg:m-0 md:gap-[50px] lg:gap-[143px] 2xs:mx-3 2xs:gap-5 pt-[66px] 2xs:pt-[40px] lg:pt-[66px]">
+      class="our-story">
       <img src="./assets/images/our-story.jpg" class="max-w-[520px] max-h-[630px] sm:self-center">
       <div class="self-center">
         <p class="text-base font-raleway-regular text-primary">Our Story</p>
-        <h3 class="text-4xl tracking-[0.8px] font-raleway-regular text-primary mt-6 md:text-3xl lg:text-4xl">Tulia
-          Amboseli Safari Camp</h3>
-        <p class="text-primary text-base font-poppins-regular tracking-[0.34px] mt-[30px] leading-[25px]"><span
+        <h2 class="text-4xl tracking-[0.8px] font-raleway-regular text-primary mt-6 md:text-3xl lg:text-4xl">Tulia
+          Amboseli Safari Camp</h2>
+        <p class="text-primary text-base font-poppins-regular tracking mt-[30px] leading-[25px]"><span
             class="block">Tulia Amboseli Safari Camp is an eco-friendly safari camp just outside of
             Kimana Gate in the southeast area
             of the Amboseli National Park in Kenya.</span>
@@ -74,50 +86,48 @@
             reminisce about your day’s safari
             with other guests.</span>
         </p>
-        <button
-          class="mt-[45px] cursor-pointer text-primary border border-primary leading-[39px] px-[41.5px] rounded-[5px] font-poppins-regular md:mt-[30px] lg:mt-[45px]"><a
-            href="#">Our
+        <button class="mt-[45px] green-button button px-[37px] md:mt-[30px] lg:mt-[45px]"><a href="#">Our
             Story</a></button>
       </div>
     </div>
     <div class="relative top-0 left-0 2xs:hidden md:block">
-      <img class="absolute -top-12 mix-blend-overlay" src="/public/assets/images/path.png">
+      <img class="absolute -top-12 mix-blend-overlay" src="./assets/images/path.png">
     </div>
   </section>
 
   <section>
     <div class="justify-self-center mb-[150px] 2xs:mx-3 lg:mx-0 2xs:mb-11 lg:mb-[150px]">
-      <h1
+      <h2
         class="text-center mt-[160px] font-raleway-light text-[32px] tracking-[0.8px] text-[#3C3B0F] 2xs:mt-3 md:mt-[160px]">
         Why book with
-        us?</h1>
+        us?</h2>
       <div class="flex gap-8 mt-[50px] max-w-[1207px] 2xs:flex-col md:flex-row">
         <div class="max-w-[286px] max-h-[178px] text-center">
           <img src="./assets/images/location.svg" class="justify-self-center">
           <p class="text-base font-poppins-regular tracking-[0.43px] text-[#473729] mt-[20px] leading-auto">Location,
             Location, Location</p>
-          <p class="text-[13px] tracking-[0.34px] leading-[22px] font-poppins-regular text-[#3C3B0F] mt-[13px]">Our
+          <p class="text-[13px] tracking-[0.34px] opacity-50 leading-[22px] font-poppins-regular text-[#3C3B0F] mt-[13px]">Our
             portfolio features properties in Africa’s most celebrated wildlife regions, ensuring that our guests get as
             close to the action as possible</p>
         </div>
         <div class="max-w-[286px] text-center">
           <img src="./assets/images/heart.png" class="justify-self-center">
           <p class="text-base font-poppins-regular tracking-[0.43px] text-[#473729] mt-[13px]">Our Impact</p>
-          <p class="text-[13px] tracking-[0.34px] leading-[22px] font-poppins-regular text-[#3C3B0F] mt-[13px]">We’re
+          <p class="text-[13px] tracking-[0.34px] opacity-50 leading-[22px] font-poppins-regular text-[#3C3B0F] mt-[13px]">We’re
             committed to supporting conservation, education and empowerment in the reserves and communities we call
             home.</p>
         </div>
         <div class="max-w-[286px] text-center">
           <img src="./assets/images/clock.png" class="justify-self-center">
           <p class="text-base font-poppins-regular tracking-[0.43px] text-[#473729] mt-[13px]">Authentic Experiences</p>
-          <p class="text-[13px] tracking-[0.34px] leading-[22px] font-poppins-regular text-[#3C3B0F] mt-[13px]">Whether
+          <p class="text-[13px] tracking-[0.34px] opacity-50 leading-[22px] font-poppins-regular text-[#3C3B0F] mt-[13px]">Whether
             it’s game viewing, climbing Kilimanjaro, diving in Zanzibar or just relaxing in a pristine hideaway, we’ll
             help you fulfil your wildest dreams.</p>
         </div>
         <div class="max-w-[286px] text-center">
           <img src="./assets/images/sunset 2.svg" class="justify-self-center">
           <p class="text-base font-poppins-regular tracking-[0.43px] text-[#473729] mt-[13px]">The Spirit of Tulia</p>
-          <p class="text-[13px] tracking-[0.34px] leading-[22px] font-poppins-regular text-[#3C3B0F] mt-[13px]">Each
+          <p class="text-[13px] tracking-[0.34px] opacity-50 leading-[22px] font-poppins-regular text-[#3C3B0F] mt-[13px]">Each
             member of the Tulia team is committed and thrilled to be able to share our properties and experiences with
             our guests.</p>
         </div>
@@ -130,73 +140,258 @@
       <div class="flex justify-between 2xs:flex-col md:flex-row 2xs:gap-5">
         <h2
           class="font-raleway-regular tracking-[0.8px] text-primary text-4xl font-normal 2xs:mt-4 lg:mt-0 2xs:text-[25.5px] sm:text-4xl">
-          Our
-          Accommodation</h2>
-        <button
-          class="text-green border cursor-pointer border-green leading-[39px] px-[39px] rounded-[5px] font-poppins-regular"><a
-            href="#">Explore All</a></button>
+          Our Accommodation
+        </h2>
+        <button class="green-button px-[37px] button">
+          <a href="#">Explore All</a>
+        </button>
       </div>
+
       <p class="text-base max-w-[619px] font-poppins-light tracking-[0.34px] text-primary leading-[25px] mt-[21px]">
         Spread over lush greenery, ample space for privacy and a chance to relax and rejuvenate,
         Tulia Amboseli Safari Camp offers spacious tents, each with stunning views of Mt Kilimanjaro.
       </p>
-      <div class="grid grid-cols-3 mt-[80px] gap-[41px] 2xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 justify-center">
-        <div class="bg-[url('./assets/images/Mask.png')] our-accommodation-card-responsive">
-          <p class="font-poppins-regular text-[26px] leading-[36px] tracking-[0.54px] text-white">Superb Tents</p>
-          <a href="#"
-            class="text-white font-poppins-regular text-[15px] w-fit tracking-[0.32px] underline underline-offset-8 mb-2">Explore</a>
-        </div>
-        <div class="bg-[url('./assets/images/super-f-tents.png')] our-accommodation-card-responsive">
-          <p class="font-poppins-regular text-[26px] leading-[36px] tracking-[0.54px] text-white">Superb Tents
-          </p>
-          <a href="#"
-            class="text-white font-poppins-regular text-[15px] w-fit tracking-[0.32px] underline underline-offset-8 mb-2">Explore</a>
-        </div>
-        <div class="bg-[url('./assets/images/deluxe-tents.png')] our-accommodation-card-responsive">
-          <p class="font-poppins-regular text-[26px] leading-[36px] tracking-[0.54px] text-white">Deluxe Tents</p>
-          <a href="#"
-            class="text-white font-poppins-regular text-[15px] w-fit tracking-[0.32px] underline underline-offset-8 mb-2">Explore</a>
+
+      <div class="block md:hidden mt-[50px]">
+        <div class="swiper accommodation-swiper">
+          <div class="swiper-wrapper">
+
+            <div
+              class="swiper-slide bg-[url('./assets/images/Mask.png')] bg-cover bg-center our-accommodation-card-responsive">
+              <p class="font-poppins-regular text-[26px] leading-[36px] tracking-[0.54px] text-white">Superb Tents</p>
+              <a href="#"
+                class="text-white font-poppins-regular text-[15px] w-fit tracking-[0.32px] underline underline-offset-8 mb-2">Explore</a>
+            </div>
+
+            <div
+              class="swiper-slide bg-[url('./assets/images/super-f-tents.png')] bg-cover bg-center our-accommodation-card-responsive">
+              <p class="font-poppins-regular text-[26px] leading-[36px] tracking-[0.54px] text-white">Superb Tents</p>
+              <a href="#"
+                class="text-white font-poppins-regular text-[15px] w-fit tracking-[0.32px] underline underline-offset-8 mb-2">Explore</a>
+            </div>
+
+            <div
+              class="swiper-slide bg-[url('./assets/images/deluxe-tents.png')] bg-cover bg-center our-accommodation-card-responsive">
+              <p class="font-poppins-regular text-[26px] leading-[36px] tracking-[0.54px] text-white">Deluxe Tents</p>
+              <a href="#"
+                class="text-white font-poppins-regular text-[15px] w-fit tracking-[0.32px] underline underline-offset-8 mb-2">Explore</a>
+            </div>
+            <div
+              class="swiper-slide bg-[url('./assets/images/Mask.png')] bg-cover bg-center our-accommodation-card-responsive">
+              <p class="font-poppins-regular text-[26px] leading-[36px] tracking-[0.54px] text-white">Superb Tents</p>
+              <a href="#"
+                class="text-white font-poppins-regular text-[15px] w-fit tracking-[0.32px] underline underline-offset-8 mb-2">Explore</a>
+            </div>
+
+            <div
+              class="swiper-slide bg-[url('./assets/images/super-f-tents.png')] bg-cover bg-center our-accommodation-card-responsive">
+              <p class="font-poppins-regular text-[26px] leading-[36px] tracking-[0.54px] text-white">Superb Tents</p>
+              <a href="#"
+                class="text-white font-poppins-regular text-[15px] w-fit tracking-[0.32px] underline underline-offset-8 mb-2">Explore</a>
+            </div>
+
+            <div
+              class="swiper-slide bg-[url('./assets/images/deluxe-tents.png')] bg-cover bg-center our-accommodation-card-responsive">
+              <p class="font-poppins-regular text-[26px] leading-[36px] tracking-[0.54px] text-white">Deluxe Tents</p>
+              <a href="#"
+                class="text-white font-poppins-regular text-[15px] w-fit tracking-[0.32px] underline underline-offset-8 mb-2">Explore</a>
+            </div>
+
+          </div>
         </div>
       </div>
+
+      <div class="hidden md:grid grid-cols-3 mt-[80px] gap-[41px] justify-center overflow-hidden">
+        <div
+          class="group bg-[url('./assets/images/Mask.png')] bg-cover bg-center our-accommodation-card-responsive relative overflow-hidden transition-all duration-500 hover:scale-[1.03] hover:brightness-110">
+          <div class="absolute inset-0 bg-black/30 group-hover:bg-black/20 transition-all duration-500"></div>
+          <div class="relative z-10 flex flex-col justify-end h-full p-6">
+            <p class="font-poppins-regular text-[26px] leading-[36px] tracking-[0.54px] text-white">
+              Superb Tents
+            </p>
+            <a href="#" class="text-white font-poppins-regular text-[15px] w-fit tracking-[0.32px] underline underline-offset-8 mb-2
+               transition-all duration-300 ease-out
+               opacity-0 translate-y-2
+               group-hover:opacity-100 group-hover:translate-y-0 group-hover:underline group-hover:decoration-white">
+              Explore
+            </a>
+          </div>
+        </div>
+        <div
+          class="group bg-[url('./assets/images/super-f-tents.png')] bg-cover bg-center our-accommodation-card-responsive relative overflow-hidden transition-all duration-500 hover:scale-[1.03] hover:brightness-110">
+          <div class="absolute inset-0 bg-black/30 group-hover:bg-black/20 transition-all duration-500"></div>
+          <div class="relative z-10 flex flex-col justify-end h-full p-6">
+            <p class="font-poppins-regular text-[26px] leading-[36px] tracking-[0.54px] text-white">
+              Superb Tents
+            </p>
+            <a href="#" class="text-white font-poppins-regular text-[15px] w-fit tracking-[0.32px] underline underline-offset-8 mb-2
+               transition-all duration-300 ease-out
+               opacity-0 translate-y-2
+               group-hover:opacity-100 group-hover:translate-y-0 group-hover:underline group-hover:decoration-white">
+              Explore
+            </a>
+          </div>
+        </div>
+        <div
+          class="group bg-[url('./assets/images/deluxe-tents.png')] bg-cover bg-center our-accommodation-card-responsive relative overflow-hidden transition-all duration-500 hover:scale-[1.03] hover:brightness-110">
+          <div class="absolute inset-0 bg-black/30 group-hover:bg-black/20 transition-all duration-500"></div>
+          <div class="relative z-10 flex flex-col justify-end h-full p-6">
+            <p class="font-poppins-regular text-[26px] leading-[36px] tracking-[0.54px] text-white">
+              Deluxe Tents
+            </p>
+            <a href="#" class="text-white font-poppins-regular text-[15px] w-fit tracking-[0.32px] underline underline-offset-8 mb-2
+               transition-all duration-300 ease-out
+               opacity-0 translate-y-2
+               group-hover:opacity-100 group-hover:translate-y-0 group-hover:underline group-hover:decoration-white">
+              Explore
+            </a>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
   <section>
-    <div
-      class="mt-[150px] bg-[url('./assets/images/experiances.png')] bg-cover 2xs:mt-[40px] md:mt-[80px] lg:mt-[150px]">
-      <div class="pt-[255px] mx-[103px] pb-[103px] experience-responsive max-h-[683px]">
-        <p class="font-raleway-regular text-base tracking-[1.29px] text-white ">Experiences</p>
-        <h3 class="text-4xl font-raleway-regular tracking-[0.8px] text-white mt-[24px] 2xs:text-[26px] sm:text-4xl">
-          Breathe in the Real Africa</h3>
-        <p class="max-w-[684px] text-white text-base leading-[25px] tracking-[0.34px] font-poppins-regular mt-[30px]">
-          Nothing can
-          prepare you for a trip to Africa – the vast landscapes, the thrilling encounters with big game, the details
-          brought to life by your expert guides. It’s in the cool of the morning and afternoon that your senses will be
-          most alive, stimulated whether you are on foot, atop a horse, in a game vehicle, hot air balloon or boat. </p>
-        <div class="flex justify-between mt-[45px] flex-wrap max-[705px]:mt-3">
-          <button
-            class="text-white border cursor-pointer border-white leading-[39px] px-[39.5px] rounded-[5px] font-poppins-regular"><a
-              href="#">Explore Experiences</a></button>
-          <div class="flex items-center max-[706px]:mt-8">
-            <span class="text-white font-poppins-regular text-base tracking-[0.34px] ">Game Drives</span>
-            <div class="flex gap-6 ml-[52px]">
-              <div class="rounded-[50%] border border-white p-[7.5px]"><img src="./assets/images/left-arrow.png"></div>
-              <div class="rounded-[50%] border border-white p-[7.5px]"><img src="./assets/images/right-arrow.png"></div>
+  <div class="swiper mt-[150px] w-full 2xs:mt-[40px] md:mt-[80px] lg:mt-[150px]">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="relative w-full max-h-[683px]">
+          <img src="./assets/images/experiances.png" alt="Game Drives"
+            class="absolute inset-0 w-full h-full object-cover" />
+          <div class="pt-[255px] mx-[103px] pb-[103px] experience-responsive max-h-[683px] relative">
+            <p class="font-raleway-regular text-base tracking-[1.29px] text-white">Experiences</p>
+            <h3 class="text-4xl font-raleway-regular tracking-[0.8px] text-white mt-[24px] 2xs:text-[26px] sm:text-4xl">
+              Breathe in the Real Africa
+            </h3>
+            <p
+              class="max-w-[684px] text-white text-base leading-[25px] tracking-[0.34px] font-poppins-regular mt-[30px]">
+              Nothing can prepare you for a trip to Africa – the vast landscapes, the thrilling encounters with big
+              game,
+              the details brought to life by your expert guides. It’s in the cool of the morning and afternoon that your
+              senses will be most alive, stimulated whether you are on foot, atop a horse, in a game vehicle, hot air
+              balloon or boat.
+            </p>
+
+            <div class="flex justify-between mt-[45px] flex-wrap max-[705px]:mt-3">
+              <button
+                class="text-white border cursor-pointer border-white leading-[39px] px-[39.5px] rounded-[5px] font-poppins-regular">
+                <a href="#">Explore Experiences</a>
+              </button>
+
+              <div class="flex items-center max-[706px]:mt-8">
+                <span class="text-white font-poppins-regular text-base tracking-[0.34px]">Game Drives</span>
+                <div class="flex gap-6 ml-[52px]">
+                  <div
+                    class="relative rounded-full items-center justify-center  border border-white p-[6px] flex cursor-pointer object-cover">
+                    <img src="./assets/images/left-arrow.png" alt="Previous" class="swiper-button-prev" />
+                  </div>
+                  <div
+                    class="relative rounded-full border items-center justify-center  border-white p-[6px] flex cursor-pointer">
+                    <img src="./assets/images/right-arrow.png" alt="Next" class="swiper-button-next" />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      <div class="swiper-slide">
+        <div class="relative w-full max-h-[683px]">
+          <img src="./assets/images/experiances-slider2.png" alt="Game Drives"
+            class="absolute inset-0 w-full h-full object-cover" />
+          <div class="pt-[255px] mx-[103px] pb-[103px] experience-responsive max-h-[683px] relative">
+            <p class="font-raleway-regular text-base tracking-[1.29px] text-white">Experiences</p>
+            <h3 class="text-4xl font-raleway-regular tracking-[0.8px] text-white mt-[24px] 2xs:text-[26px] sm:text-4xl">
+              Breathe in the Real Africa
+            </h3>
+            <p
+              class="max-w-[684px] text-white text-base leading-[25px] tracking-[0.34px] font-poppins-regular mt-[30px]">
+              Nothing can prepare you for a trip to Africa – the vast landscapes, the thrilling encounters with big
+              game,
+              the details brought to life by your expert guides. It’s in the cool of the morning and afternoon that your
+              senses will be most alive, stimulated whether you are on foot, atop a horse, in a game vehicle, hot air
+              balloon or boat.
+            </p>
+
+            <div class="flex justify-between mt-[45px] flex-wrap max-[705px]:mt-3">
+              <button
+                class="text-white border cursor-pointer border-white leading-[39px] px-[39.5px] rounded-[5px] font-poppins-regular">
+                <a href="#">Explore Experiences</a>
+              </button>
+
+              <div class="flex items-center max-[706px]:mt-8">
+                <span class="text-white font-poppins-regular text-base tracking-[0.34px]">Game Drives</span>
+                <div class="flex gap-6 ml-[52px]">
+                  <div
+                    class="relative rounded-full items-center justify-center  border border-white p-[6px] flex cursor-pointer object-cover">
+                    <img src="./assets/images/left-arrow.png" alt="Previous" class="swiper-button-prev" />
+                  </div>
+                  <div
+                    class="relative rounded-full border items-center justify-center  border-white p-[6px] flex cursor-pointer">
+                    <img src="./assets/images/right-arrow.png" alt="Next" class="swiper-button-next" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="relative w-full max-h-[683px]">
+          <img src="./assets/images/experiances-slider3.png" alt="Game Drives"
+            class="absolute inset-0 w-full h-full object-cover" />
+          <div class="pt-[255px] mx-[103px] pb-[103px] experience-responsive max-h-[683px] relative">
+            <p class="font-raleway-regular text-base tracking-[1.29px] text-white">Experiences</p>
+            <h3 class="text-4xl font-raleway-regular tracking-[0.8px] text-white mt-[24px] 2xs:text-[26px] sm:text-4xl">
+              Breathe in the Real Africa
+            </h3>
+            <p
+              class="max-w-[684px] text-white text-base leading-[25px] tracking-[0.34px] font-poppins-regular mt-[30px]">
+              Nothing can prepare you for a trip to Africa – the vast landscapes, the thrilling encounters with big
+              game,
+              the details brought to life by your expert guides. It’s in the cool of the morning and afternoon that your
+              senses will be most alive, stimulated whether you are on foot, atop a horse, in a game vehicle, hot air
+              balloon or boat.
+            </p>
+
+            <div class="flex justify-between mt-[45px] flex-wrap max-[705px]:mt-3">
+              <button
+                class="text-white border cursor-pointer border-white leading-[39px] px-[39.5px] rounded-[5px] font-poppins-regular">
+                <a href="#">Explore Experiences</a>
+              </button>
+
+              <div class="flex items-center max-[706px]:mt-8">
+                <span class="text-white font-poppins-regular text-base tracking-[0.34px]">Game Drives</span>
+                <div class="flex gap-6 ml-[52px]">
+                  <div
+                    class="relative rounded-full items-center justify-center  border border-white p-[6px] flex cursor-pointer object-cover">
+                    <img src="./assets/images/left-arrow.png" alt="Previous" class="swiper-button-prev" />
+                  </div>
+                  <div
+                    class="relative rounded-full border items-center justify-center  border-white p-[6px] flex cursor-pointer">
+                    <img src="./assets/images/right-arrow.png" alt="Next" class="swiper-button-next" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
-  </section>
+  </div>
+</section>
+
   <section>
-    <div class="mt-[150px] max-w-[1340px] bg-[#F1EDED] xl:justify-self-center 2xs:mt-[40px] md:mt-[80px] lg:mt-[150px]">
+    <div class="mt-[150px] max-w-[1340px] bg-light-grayish 2xs:mt-[40px] md:mt-[80px] lg:mt-[150px]">
       <div class="flex max-w-[1340px] 2xs:flex-col md:flex-row 2xs:mx-[30px] md:mx-0">
         <img src="./assets/images/Dining.png" class="dining-responsive">
         <div
           class="lg:max-w-[451px] 2xs:w-full ml-[110px] my-[110px] 2xs:mx-0 2xs:my-[20px] md:ml-[30px] md:my-[30px] md:mr-3 lg:mr-0 xl:mr-6 lg:ml-[110px] lg:my-[110px]">
           <p class="font-raleway-regular text-base text-[#473729]">Dining</p>
-          <h6 class="font-raleway-regular text-4xl tracking-[0.8px] text-primary my-[24px] 2xs:text-[26px] sm:text-4xl">
-            Dine in the open</h6>
+          <h2 class="font-raleway-regular text-4xl tracking-[0.8px] text-primary my-[24px] 2xs:text-[26px] sm:text-4xl">
+            Dine in the open</h2>
           <p class="font-poppins-regular leading-[25px] tracking-[0.34px] text-base text-primary">Enjoy cereals, fresh
             fruit, and pastries along with a hot breakfast in the morning. For lunch we offer the option of a packed
             lunch on safari or a cooked 3-course lunch back at the camp, depending on your plans for the day. In the
@@ -204,9 +399,7 @@
             wines or a drink from the fully stocked bar.
             <span class="block">The highly trained chefs will cater to any dietary restrictions.</span>
           </p>
-          <button
-            class="text-green border border-green leading-[39px] mt-[64px] px-[39px] rounded-[5px] font-poppins-regular cursor-pointer"><a
-              href="#">Explore Dining</a></button>
+          <button class="green-button button mt-[64px] px-[36.5px]"><a href="#">Explore Dining</a></button>
         </div>
       </div>
     </div>
@@ -215,78 +408,152 @@
     <img src="./assets/images/Path 2.png" class="w-[100%]">
   </div>
 
-  <section>
-    <div class="carousel w-[100%] h-[100%] relative overflow-hidden z-10 2xs:mt-[40px] md:mt-0"
-      aria-roledescription="carousel">
-      <div class="carousel-inner absolute h-[100%] w-full z-10 ">
-        <div
-          class="carousel-item absolute top-0 left-0 w-full h-[100%] opacity-100 transition-all duration-500 ease-out"
-          role="group" aria-roledescription="slide" aria-label="Slide 1">
-          <img src="./assets/images/testomonial1.png" alt="Random Image 1" class="w-screen bg-cover relative h-[100%]">
+  <section class="relative w-full overflow-hidden z-10 2xs:mt-[40px] md:mt-0 max-h-[560px]">
+    <div class="swiper testimonial-swiper w-full h-full">
+
+      <div class="swiper-wrapper">
+        <div class="swiper-slide relative">
+          <img src="./assets/images/testomonial1.png" alt="Testimonial 1"
+            class="w-full h-full min-h-[400px] object-cover" />
+
+          <div class="absolute inset-0 flex flex-col items-center justify-center text-center
+                 px-3 sm:px-6 md:px-10 py-6 sm:py-10 md:py-[100px]
+                 bg-black/30">
+
+            <p class="text-white font-raleway-regular leading-relaxed tracking-[0.8px]
+                   text-xs sm:text-sm md:text-base lg:text-[22px]
+                   max-w-[90%] sm:max-w-[700px] md:max-w-[872px]">
+              “I visited this beautiful property in the wilderness just outside the gates of Amboseli. It’s a myth that
+              one
+              needs to stay inside the park. I would stay at this property any day. You face Mt. Kilimanjaro and usually
+              have elephants visit you every evening. The service is fantastic and when on safari one needs to get the
+              full
+              experience which is what this camp does for you. Very comfortable with excellent food. Yes! Very very
+              highly
+              recommended.”
+            </p>
+
+            <p class="text-white font-raleway-regular tracking-[0.8px]
+                    text-xs sm:text-sm md:text-[17px] mt-3 sm:mt-4">
+              Ranjan P
+            </p>
+
+            <button class="text-white border border-white rounded-[5px] mt-[20px]
+                   px-[20px] sm:px-[30px] md:px-[39px] py-[6px]
+                   text-xs sm:text-sm md:text-[18px]
+                   font-poppins-regular leading-[32px]
+                   hover:bg-white hover:text-black transition">
+              <a href="#">Enquire Now</a>
+            </button>
+          </div>
+        </div>
+        <div class="swiper-slide relative">
+          <img src="./assets/images/testomonial2.png" alt="Testimonial 2"
+            class="w-full h-full min-h-[400px] object-cover" />
+
+          <div class="absolute inset-0 flex flex-col items-center justify-center text-center
+                 px-3 sm:px-6 md:px-10 py-6 sm:py-10 md:py-[100px]
+                 bg-black/30">
+            <p class="text-white font-raleway-regular leading-relaxed tracking-[0.8px]
+                   text-xs sm:text-sm md:text-base lg:text-[22px]
+                   max-w-[90%] sm:max-w-[700px] md:max-w-[872px]">
+              “I visited this beautiful property in the wilderness just outside the gates of Amboseli. It’s a myth that
+              one
+              needs to stay inside the park. I would stay at this property any day. You face Mt. Kilimanjaro and usually
+              have elephants visit you every evening. The service is fantastic and when on safari one needs to get the
+              full
+              experience which is what this camp does for you. Very comfortable with excellent food. Yes! Very very
+              highly
+              recommended.”
+            </p>
+
+            <p class="text-white font-raleway-regular tracking-[0.8px]
+                    text-xs sm:text-sm md:text-[17px] mt-3 sm:mt-4">
+              Ranjan P
+            </p>
+
+            <button class="text-white border border-white rounded-[5px] mt-[20px]
+                   px-[20px] sm:px-[30px] md:px-[39px] py-[6px]
+                   text-xs sm:text-sm md:text-[18px]
+                   font-poppins-regular leading-[32px]
+                   hover:bg-white hover:text-black transition">
+              <a href="#">Enquire Now</a>
+            </button>
+          </div>
+        </div>
+        <div class="swiper-slide relative">
+          <img src="./assets/images/testomonial3.png" alt="Testimonial 3"
+            class="w-full h-full min-h-[400px] object-cover" />
+
+          <div class="absolute inset-0 flex flex-col items-center justify-center text-center
+                 px-3 sm:px-6 md:px-10 py-6 sm:py-10 md:py-[100px]
+                 bg-black/30">
+            <p class="text-white font-raleway-regular leading-relaxed tracking-[0.8px]
+                   text-xs sm:text-sm md:text-base lg:text-[22px]
+                   max-w-[90%] sm:max-w-[700px] md:max-w-[872px]">
+              “I visited this beautiful property in the wilderness just outside the gates of Amboseli. It’s a myth that
+              one
+              needs to stay inside the park. I would stay at this property any day. You face Mt. Kilimanjaro and usually
+              have elephants visit you every evening. The service is fantastic and when on safari one needs to get the
+              full
+              experience which is what this camp does for you. Very comfortable with excellent food. Yes! Very very
+              highly
+              recommended.”
+            </p>
+
+            <p class="text-white font-raleway-regular tracking-[0.8px]
+                    text-xs sm:text-sm md:text-[17px] mt-3 sm:mt-4">
+              Ranjan P
+            </p>
+
+            <button class="text-white border border-white rounded-[5px] mt-[20px]
+                   px-[20px] sm:px-[30px] md:px-[39px] py-[6px]
+                   text-xs sm:text-sm md:text-[18px]
+                   font-poppins-regular leading-[32px]
+                   hover:bg-white hover:text-black transition">
+              <a href="#">Enquire Now</a>
+            </button>
+          </div>
         </div>
 
-        <div class="carousel-item top-0 left-0 w-full h-[100%] opacity-100 transition-all duration-500 ease-out"
-          role="group" aria-roledescription="slide" aria-label="Slide 1">
-          <img src="./assets/images/testomonial2.png" alt="Random Image 1" class="w-screen bg-cover relative h-[100%]">
-        </div>
-      </div>
-      <div class="flex justify-between w-full h-[100%]">
-        <button
-          class="prev previous"
-          aria-label="prev slide">
-          <img src="./assets/images/left-arrow.png">
-        </button>
-        <button
-          class="next p-[9.5px] absolute cursor-pointer z-50 top-[50%] right-[32px] 2xs:top-[5%] md:top-[50%] appearance-none border border-white bg-opacity-40 rounded-full transition-all duration-300 ease-in-out shadow-lg focus:outline-none focus:ring-0 hover:bg-opacity-20"
-          aria-label="next slide">
-          <img src="./assets/images/right-arrow.png">
-        </button>
       </div>
       <div
-        class="z-50 justify-self-center relative self-center py-[153px] 2xs:my-[95px] lg:my-0 2xs:py-0 lg:py-[153px]">
-        <p
-          class="text-white text-[22px] text-center max-w-[872px] font-raleway-regular tracking-[0.8px] 2xs:mx-[30px] md:mx-0 2xs:text-base md:text-[18px] lg:text-[22px]">
-          “I visited this
-          beautiful
-          property in the wilderness just outside the gates of Amboseli. It’s a myth that one needs to stay inside the
-          park. I would stay at this property any day. You face Mt. Kilimanjaro and usually have elephants visit you
-          every
-          evening. The service is fantastic and when on safari one needs to get the full experience which is what this
-          camp does for you. Very comfortable with excellent food. Yes! Very very highly recommended.”</p>
-        <p class="text-white leading-8 font-raleway-regular tracking-[0.8px] text-[20px] text-center">Ranjan P</p>
-        <button
-          class="text-white block justify-self-center cursor-pointer border tracking-[0.39px] border-white leading-[39px] mt-[33px] px-[39px] rounded-[5px] text-[18px] 2xs:text-base md:text-[18px] font-poppins-regular"><a
-            href="#">Enquire Now Trip</a></button>
+        class="flex justify-between w-full absolute top-1/2 -translate-y-1/2 z-50 px-4 sm:px-8 2xs:top-11 md:top-1/2">
+        <button class="swiper-button-prev p-[6px] sm:p-[9.5px] cursor-pointer border border-white rounded-full 
+               hover:bg-white/20 transition flex items-center justify-center">
+          <img src="./assets/images/left-arrow.png" alt="Previous" />
+        </button>
+
+        <button class="swiper-button-next p-[6px] sm:p-[9.5px] cursor-pointer border border-white rounded-full 
+               hover:bg-white/20 transition flex items-center justify-center">
+          <img src="./assets/images/right-arrow.png" alt="Next" />
+        </button>
       </div>
-    </div>
     </div>
   </section>
 
   <section>
     <div
-      class="bg-[#F1EDED] px-[94px] py-[84px] 2xs:px-[30px] 2xs:py-[40px] md:px-[60px] md:py-[65px] lg:px-[94px] lg:py-[84px]">
-      <h4 class="font-raleway-regular text-4xl tracking-[0.77px] 2xs:text-[24px] sm:text-4xl">Hear the latest news about
-        Tulia</h4>
-      <div class="flex max-w-[1248px] gap-[24px] overflow-hidden mt-[49px] flex-wrap">
-        <input type="text" placeholder="Name"
-          class="bg-[#F1EDED] text-[#CAC7C7] grow border border-[#CAC7C7] pt-[16px] pb-[17px] pl-[22px] rounded-[5px] max-w-[294px] focus:border-[#3C3B0F] focus:text-[#3C3B0F]">
-        <input type="text" placeholder="Surname"
-          class="bg-[#F1EDED] text-[#CAC7C7] grow border border-[#CAC7C7] pt-[16px] pb-[17px] pl-[22px] rounded-[5px] max-w-[294px] focus:border-[#3C3B0F] focus:text-[#3C3B0F]">
-        <input type="email" placeholder="Email Address"
-          class="bg-[#F1EDED] text-[#CAC7C7] grow border border-[#CAC7C7] pt-[16px] pb-[17px] pl-[22px] rounded-[5px] max-w-[377px] focus:border-[#3C3B0F] focus:text-[#3C3B0F]">
-        <button
-          class="text-[#3C3B0F] font-poppins-regular border border-[#3C3B0F] px-[68.5px] rounded-[5px] cursor-pointer 2xs:py-[12px] lg:py-0 hover:text-[#F1EDED] hover:bg-[#3C3B0F]"><a
-            href="#">Subscribe</a></button>
+      class="bg-light-grayish px-[94px] py-[84px] 2xs:px-[30px] h-fit 2xs:py-[40px] md:px-[60px] md:py-[65px] lg:px-[94px] lg:py-[84px]">
+      <h2 class="font-raleway-regular text-4xl tracking-[0.77px] 2xs:text-[24px] sm:text-4xl">Hear the latest news about
+        Tulia</h2>
+      <div class="flex 2xs:w-fit lg:w-full gap-[24px] overflow-hidden mt-[49px] flex-wrap lg:justify-between">
+        <input type="text" placeholder="Name" class="input max-w-[294px]">
+        <input type="text" placeholder="Surname" class="input max-w-[294px]">
+        <input type="email" placeholder="Email Address" class="input max-w-[377px]">
+        <button class="primary-button button px-[61.5px]"><a href="#">Subscribe</a></button>
       </div>
     </div>
   </section>
 
   <footer>
-    <div class="bg-[#F1EDED]">
-      <div class="flex pl-[98px] max-w-screen 2xs:px-[30px] md:px-[60px] lg:pl-[98px] 2xs:gap-2 md:gap-0 2xs:flex-col md:flex-row">
+    <div class="bg-light-grayish">
+      <div
+        class="flex pl-[98px] max-w-screen 2xs:px-[30px] md:px-[60px] lg:pl-[98px] 2xs:gap-2 md:gap-0 2xs:flex-col md:flex-row">
         <div class="max-w-[244px]">
           <img src="./assets/images/logo-footer.png">
-          <p class="max-w-[244px] 2xs:max-w-screen md:max-w-[244px] opacity-60 font-poppins-light text-base leading-[25px] tracking-[0.34px] mt-[25px]">
+          <p
+            class="max-w-[242px] 2xs:max-w-screen md:max-w-[242px] opacity-60 font-poppins-light text-base leading-[25px] tracking-[0.34px] mt-[25px]">
             Tulia Amboseli Safari Camp is an eco-friendly safari camp just outside of Kimana Gate in the southeast area
             of the Amboseli National Park in Kenya.</p>
           <div class="flex gap-[15px] w-fit mt-[31px]">
@@ -296,7 +563,8 @@
             <div class="socialmedia-icon"><img src="./assets/images/youtube.png"></div>
           </div>
         </div>
-        <div class="flex 2xs:flex-col xs:flex-row 2xs:gap-3 xs:gap-0 2xs:mt-5 md:mt-0 max-[930px]:justify-between">
+        <div
+          class="flex 2xs:flex-col xs:flex-row 2xs:gap-3 xs:gap-0 2xs:mt-5 md:mt-0 max-[930px]:justify-between w-full xl:justify-around">
           <div class="ml-[113px] 2xs:ml-0 md:ml-[110px] lg:ml-[113px]">
             <h6 class="text-[#3C3B0F] font-raleway-regular text-[18px] leading-[29px] tracking-[0.34px]">About</h6>
             <p class="max-w-[76px] text-[#3C3B0F] opacity-40 leading-[38px] mt-1">Our Story Location DIning Rates Live
@@ -324,7 +592,8 @@
         </div>
       </div>
       <div class="w-screen border border-[#B6B6B6] mt-[170px]"></div>
-      <div class="flex 2xs:gap-2 md:gap-5 lg:gap-[30px] px-[98px] 2xs:px-[30px] md:px-[60px] lg:px-[98px] w-screen justify-between mt-[19px] pb-[30px] flex-wrap">
+      <div
+        class="flex 2xs:gap-2 md:gap-5 lg:gap-[30px] px-[98px] 2xs:px-[30px] md:px-[60px] lg:px-[98px] w-screen justify-between mt-[19px] pb-[30px] flex-wrap">
         <p class="font-poppins-regular text-base leading-[25px] tracking-[0.34px] text-[#232828]">All rights reserved ©
           2025 Tulia</p>
         <div class="flex gap-[30px] 2xs:gap-2 md:gap-5 lg:gap-[30px] flex-wrap">
@@ -335,6 +604,8 @@
       </div>
     </div>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 
 </html>
