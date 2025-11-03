@@ -132,13 +132,6 @@
   @apply p-[6px] sm:p-[9.5px] cursor-pointer border border-white rounded-full 
                hover:bg-white/20 transition flex items-center justify-center;
 }
-.testimonial-center-button{
-  @apply text-white border border-white rounded-[5px] mt-[20px]
-                   px-[20px] sm:px-[30px] md:px-[39px] py-[6px]
-                   text-xs sm:text-sm md:text-[18px]
-                   font-poppins-regular leading-[32px]
-                   hover:bg-white hover:text-black transition;
-}
 .testimonial-span{
   @apply text-white font-raleway-regular tracking-[0.8px]
                     text-xs sm:text-sm md:text-[17px] mt-3 sm:mt-4;
