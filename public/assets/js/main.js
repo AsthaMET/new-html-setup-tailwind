@@ -62,9 +62,10 @@ const swiper = new Swiper('.accommodation-swiper', {
       delay: 2500,
       disableOnInteraction: false,
     },
+    centeredSlides: true,
+    loopedSlides: 5, 
     slidesPerView: 1.1,
     spaceBetween: 20,
-    centeredSlides: true,
     breakpoints: {
       640: {
         slidesPerView: 2,
